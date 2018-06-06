@@ -31,7 +31,6 @@ class Dragon(Animal):
         super().displayHealth()
         print ("I am a Dragon")
 
-
     def fly(self):
         self.health-=10
 
