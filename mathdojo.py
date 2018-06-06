@@ -1,7 +1,14 @@
 class MathDojo:
     def __init__(self):
-        total=0
-    def dojoAdd(self,num):
+        self.result=0
+    def add(self,*num):
+        for val in num:
+            self.result+=val
         return self
-    def dojoSub(self,num):
+    def subtract(self,*num):
+        for val in num:
+            self.result-=val
         return self
+
+md=MathDojo()
+print(md.add(2).add(2,5,1).subtract(3,2).result)
